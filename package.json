@@ -14,6 +14,9 @@
     "url": "https://github.com/BoolOfficial/test-apps/issues"
   },
   "homepage": "https://usebool.com",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
