@@ -1,0 +1,55 @@
+### dependencies ###
+/node_modules
+/.pnp
+.pnp.*
+
+### output ###
+/dist
+/dist-ssr
+
+### yarn ###
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+
+.yarn-integrity
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+### testing ###
+/coverage
+
+### misc ###
+.DS_Store
+*.pem
+
+### debug ###
+yarn-debug.log*
+yarn-error.log*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+### Node ###
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+### TypeScript cache ###
+*.tsbuildinfo
+
+### Optional eslint cache ###
+.eslintcache
+
+### Output of 'npm pack' ###
+*.tgz

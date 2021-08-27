@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bool Feature flags - E2E test app</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Feature flags!</h1>
+      <main>
+        <article>
+          <p>Below is a list of features, enabled or disabled.</p>
+          <ul id="list"></ul>
+        </article>
+
+        <article>
+          <p>Below we fetch singular features by their keys.</p>
+
+          <table>
+            <thead>
+              <th>Key</th>
+              <th class="align-right">Expected</th>
+              <th class="align-right">Actual</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </article>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
