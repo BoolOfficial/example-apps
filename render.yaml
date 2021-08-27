@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: bool-test-apps
+    env: static
+    buildCommand: yarn build
+    staticPublishPath: ./build
+    pullRequestPreviewsEnabled: true
