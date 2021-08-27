@@ -3,5 +3,5 @@ services:
     name: bool-test-apps
     env: static
     buildCommand: yarn build
-    staticPublishPath: ./build
+    staticPublishPath: dist
     pullRequestPreviewsEnabled: true
