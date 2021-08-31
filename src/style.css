@@ -60,9 +60,10 @@ th {
   border-top: solid 1px currentColor;
 }
 
-.list-item-key {
+.list-item dd {
   display: block;
   color: #aaa;
+  margin-bottom: 0.5em;
 }
 
 /* === BADGE STYLES === === === === */

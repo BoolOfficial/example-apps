@@ -7,11 +7,32 @@ export const Badge = (value: FeatureFlag['value']) => {
   return `<small class="${cn}">${text}</small>`;
 };
 
-export const ListItem = ({ name, value, key }: FeatureFlag) => `
-  <li class="list-item">
-    ${name}
-    ${Badge(value)}
-    <em class="list-item-key">${key}</em>
+export const DetailsItem = (key: string, value?: string) => `
+  <dt>${key}</dt>
+  <dd test-id="details-item-${key}">${value}</dd>
+`;
+
+export const ListItem = ({
+  name,
+  value,
+  key,
+  id,
+  description,
+  applicationId,
+}: FeatureFlag) => `
+  <li class="list-item" test-id="list-item-${key}">
+    <strong test-id="list-item-name">${name}</strong>
+    <span test-id="list-item-value">${Badge(value)}</span>
+    <details>
+      <summary>
+        Details
+      </summary>
+      <dl>
+        ${DetailsItem('key', key)}
+        ${DetailsItem('description', description)}
+        ${DetailsItem('id', id)}
+        ${DetailsItem('applicationId', applicationId)}
+      </dl>
   </li>
  `;
 
@@ -26,7 +47,7 @@ export const SingleItem = ({
 }) => `
   <tr>
     <td>${key}</td>
-    <td>${Badge(expectedValue)}</td>
-    <td>${Badge(actualValue)}</td>
+    <td test-id="${key}-expectedValue">${Badge(expectedValue)}</td>
+    <td test-id="${key}-actualValue">${Badge(actualValue)}</td>
   </tr>
 `;

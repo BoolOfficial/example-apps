@@ -27,7 +27,7 @@ const composeSingularFeatures = async () => {
       expectedValue: false,
     },
     {
-      key: 'NON_EXISTANT_FEATURE',
+      key: 'NONEXISTENT_FEATURE',
       expectedValue: false,
     },
   ];

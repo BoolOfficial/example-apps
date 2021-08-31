@@ -5,3 +5,6 @@ services:
     buildCommand: yarn build
     staticPublishPath: dist
     pullRequestPreviewsEnabled: true
+    envVars:
+      - key: JS_APP_URL
+        value: https://e2e.usebool.com/
