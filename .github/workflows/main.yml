@@ -1,13 +1,22 @@
 name: postdeploy
 
-on: [deployment_status]
+on: [push, deployment_status, workflow_dispatch]
 
 jobs:
   e2e:
-    if: github.event.deployment_status.state == 'success'
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 16
+
+      - name: Install modules
+        run: yarn
+
+      - name: Run Cypress
+        uses: cypress-io/github-action@v2
