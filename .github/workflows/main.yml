@@ -1,8 +1,6 @@
 name: postdeploy
 
-on:
-  deployment_status:
-  workflow_dispatch:
+on: [deployment_status, workflow_dispatch]
 
 jobs:
   build:
