@@ -15,10 +15,7 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install modules
-        run: yarn
-
       - name: Run Cypress
         uses: cypress-io/github-action@v2
         with:
-          env: JS_APP_URL=https://e2e.usebool.com/
+          env: JS_APP_URL=https://e2e.usebool.com
