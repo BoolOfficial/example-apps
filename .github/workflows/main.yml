@@ -1,9 +1,10 @@
 name: postdeploy
 
-on: [push, deployment_status, workflow_dispatch]
+on: [deployment_status]
 
 jobs:
-  build:
+  e2e:
+    if: github.event.deployment_status.state == 'success'
     runs-on: ubuntu-latest
 
     steps:
