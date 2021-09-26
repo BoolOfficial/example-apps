@@ -21,7 +21,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "e2e": "cypress open"
+    "e2e:local": "cypress open --env JS_APP_URL=https://localhost:3000/",
+    "e2e:ci": "cypress run --env JS_APP_URL=https://e2e.usebool.com/"
   },
   "dependencies": {
     "@usebool/sdk-js": "^0.1.5"

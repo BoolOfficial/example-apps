@@ -53,3 +53,9 @@ yarn-error.log*
 
 ### Output of 'npm pack' ###
 *.tgz
+
+### Cypress ###
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
