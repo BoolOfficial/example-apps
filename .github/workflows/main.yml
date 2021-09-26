@@ -19,4 +19,13 @@ jobs:
         run: yarn
 
       - name: Run Cypress
-        uses: cypress-io/github-action@v2
+        uses: yarn e2e:ci
+
+
+
+
+
+                  uses: cypress-io/github-action@v2.9.7
+          with:
+            env:
+              JS_APP_URL: https://e2e.usebool.com/
