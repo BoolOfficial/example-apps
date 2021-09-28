@@ -18,4 +18,4 @@ jobs:
       - name: Run Cypress
         uses: cypress-io/github-action@v2
         with:
-          env: JS_APP_URL=https://usebool.com
+          env: JS_APP_URL=https://app.usebool.com
