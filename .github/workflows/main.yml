@@ -14,8 +14,4 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 16
-
-      - name: Run Cypress
-        uses: cypress-io/github-action@v2
-        with:
-          env: JS_APP_URL=https://bool-test-apps.onrender.com
+      - run: npm run e2e:ci
