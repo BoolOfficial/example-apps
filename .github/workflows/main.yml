@@ -14,5 +14,8 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 16
-      - run: npm install
-      - run: npm run e2e:ci
+
+      - name: Run Cypress
+        uses: cypress-io/github-action@v2
+        with:
+          env: JS_APP_URL=https://e2e.usebool.com
