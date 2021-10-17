@@ -12,6 +12,7 @@ const DATA_EXAMPLE = {
 describe('Core JS app', () => {
   before(() => {
     cy.visit(Cypress.env('JS_APP_URL'));
+    cy.wait(4000);
   });
 
   describe('getFeatures', () => {
