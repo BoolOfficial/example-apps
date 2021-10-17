@@ -18,5 +18,6 @@ jobs:
       - name: Run Cypress
         uses: cypress-io/github-action@v2
         with:
+          command: yarn e2e:ci
           env: JS_APP_URL=https://bool-test-apps.onrender.com
           config: video=false,screenshotOnRunFailure=false
