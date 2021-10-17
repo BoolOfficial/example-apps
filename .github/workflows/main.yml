@@ -19,3 +19,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           env: JS_APP_URL=https://bool-test-apps.onrender.com
+          config: video=false,screenshotOnRunFailure=false
