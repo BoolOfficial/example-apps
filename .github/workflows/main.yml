@@ -20,4 +20,18 @@ jobs:
         with:
           command: yarn e2e:ci
           env: JS_APP_URL=https://bool-test-apps.onrender.com
-          config: video=false,screenshotOnRunFailure=false
+          config: video=true,screenshotOnRunFailure=true
+
+      - name: Archive test screenshots
+        uses: actions/upload-artifact@v1
+        with:
+          name: screenshots
+          path: cypress/screenshots
+        if: ${{ failure() }}
+
+      - name: Archive test videos
+        uses: actions/upload-artifact@v1
+        with:
+          name: videos
+          path: cypress/videos
+        if: ${{ failure() }}
