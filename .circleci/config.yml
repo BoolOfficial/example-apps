@@ -7,12 +7,12 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install npm
-          command: npm install
+          name: Install yarn
+          command: yarn install
       - run:
           name: Install Cypress
           command: npx cypress install
       - run:
           name: Run cypress ffs
-          command: npm e2e:ci
+          command: yarn e2e:ci
 
