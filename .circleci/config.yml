@@ -19,9 +19,9 @@ workflows:
           # https://circleci.com/developer/images/image/cimg/node
           version: '16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
-          pkg-manager: yarn
+          pkg-manager: npm
       - cypress/install:
-            yarn: true 
+            yarn: false 
 
       - cypress/run:
             env: JS_APP_URL=https://bool-test-apps.onrender.com 
