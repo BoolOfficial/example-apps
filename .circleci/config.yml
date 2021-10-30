@@ -24,4 +24,4 @@ workflows:
             yarn: true 
 
       - cypress/run:
-          env: JS_APP_URL=https://bool-test-apps.onrender.com 
+            env: JS_APP_URL=https://bool-test-apps.onrender.com 
