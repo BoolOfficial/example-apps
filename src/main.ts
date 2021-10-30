@@ -36,6 +36,8 @@ const composeSingularFeatures = async () => {
   const featureTwo = await featureFlags.hasFeature(keys[1].key);
   const featureThree = await featureFlags.hasFeature(keys[2].key);
 
+  console.log(JSON.stringify(featureOne));
+
   return [featureOne, featureTwo, featureThree]
     .map((actualValue, i) => SingleItem({ ...keys[i], actualValue }))
     .join('');
