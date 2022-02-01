@@ -24,7 +24,7 @@
     "e2e": "cypress open"
   },
   "dependencies": {
-    "@usebool/sdk-js": "^0.1.5"
+    "@usebool/sdk-js": "^0.1.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.29.3",
