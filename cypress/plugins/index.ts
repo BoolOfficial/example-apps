@@ -21,7 +21,7 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 
   // copy any needed variables from process.env to config.env
-  config.env.JS_APP_URL = 'http://localhost:3000/';
+  config.env.JS_APP_URL = process.env.JS_APP_URL;
 
   // do not forget to return the changed config object!
   return config;
