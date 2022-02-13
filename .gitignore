@@ -1,5 +1,6 @@
 ### dependencies ###
 /node_modules
+**/node_modules
 /.pnp
 .pnp.*
 
@@ -19,6 +20,9 @@
 
 ### testing ###
 /coverage
+
+### environment ###
+.env.local
 
 ### misc ###
 .DS_Store

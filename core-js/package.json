@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Core JS SDK for Bool feature flag system",
+  "description": "Test app for the core JS SDK for Bool feature flag system",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BoolOfficial/test-apps.git"
@@ -24,7 +24,7 @@
     "e2e": "cypress open"
   },
   "dependencies": {
-    "@usebool/sdk-js": "^0.1.10"
+    "@usebool/sdk-js": "0.1.12"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.29.3",

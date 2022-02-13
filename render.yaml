@@ -2,7 +2,7 @@ services:
   - type: web
     name: bool-test-apps
     env: static
-    buildCommand: yarn build
+    buildCommand: cd core-js && yarn build
     staticPublishPath: dist
     pullRequestPreviewsEnabled: true
     envVars:
