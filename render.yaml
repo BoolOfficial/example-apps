@@ -3,7 +3,7 @@ services:
     name: bool-test-apps
     env: static
     buildCommand: cd core-js && yarn build
-    staticPublishPath: dist
+    staticPublishPath: core-js/dist
     pullRequestPreviewsEnabled: true
     envVars:
       - key: JS_APP_URL

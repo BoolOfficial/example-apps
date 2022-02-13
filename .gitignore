@@ -1,12 +1,11 @@
 ### dependencies ###
-/node_modules
-**/node_modules
+node_modules
 /.pnp
 .pnp.*
 
 ### output ###
-/dist
-/dist-ssr
+dist
+dist-ssr
 
 ### yarn ###
 # https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
