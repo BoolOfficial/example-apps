@@ -69,7 +69,6 @@ th {
 /* === BADGE STYLES === === === === */
 .badge__enabled,
 .badge__disabled {
-  display: inline-block;
   padding: 0.25em 0.5em;
   float: right;
 }

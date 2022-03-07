@@ -33,6 +33,7 @@ export const ListItem = ({
         ${DetailsItem('id', id)}
         ${DetailsItem('applicationId', applicationId)}
       </dl>
+    </details>
   </li>
  `;
 
