@@ -1,0 +1,86 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+main {
+  padding: 3em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+article {
+  flex-basis: 400px;
+  flex-shrink: 0;
+  padding: 1em;
+  text-align: left;
+}
+
+/* === TABLE STYLES === === === === */
+table {
+  border-collapse: collapse;
+  margin: 3em 0 0;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0.25em 0;
+}
+
+th {
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* === LIST STYLES === === === === */
+#list {
+  list-style: none;
+  margin: 3em 0 0;
+  padding: 0;
+}
+
+.list-item {
+  display: block;
+  min-height: 2em;
+  border-bottom: solid 1px currentColor;
+  padding: 0.5em;
+}
+
+.list-item:first-child {
+  border-top: solid 1px currentColor;
+}
+
+.list-item dd {
+  display: block;
+  color: #aaa;
+  margin-bottom: 0.5em;
+}
+
+/* === BADGE STYLES === === === === */
+.badge__enabled,
+.badge__disabled {
+  padding: 0.25em 0.5em;
+  float: right;
+}
+
+.badge__enabled {
+  color: green;
+  background-color: lightgreen;
+  border: solid 1px green;
+}
+
+.badge__disabled {
+  color: red;
+  background-color: pink;
+  border: solid 1px red;
+}
