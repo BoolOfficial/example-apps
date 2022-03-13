@@ -4,13 +4,14 @@ import bool from '@usebool/sdk-js';
 import { onMounted } from 'vue';
 import FeatureList from './components/FeatureList.vue';
 import SingleFeature from './components/SingleFeature.vue';
+import type { FeatureFlag } from './types';
 
 const APP_ID = 'fa41ca19-2fc0-4bc5-92ee-326b8ade7350';
 
 const featureFlags = bool({ appId: APP_ID });
 
 const ready = ref(false);
-const data = ref([]);
+const data = ref<FeatureFlag[]>([]);
 const flagEnabled = ref(false);
 const flagDisabled = ref(false);
 const flagNonexistent = ref(false);
